@@ -1,0 +1,37 @@
+{
+  "name": "alveolar",
+  "version": "1.0.0",
+  "description": "alveolar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prettier": "prettier */**/*.ts --ignore-path ./.prettierignore --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cooperhsiung/alveolar.git"
+  },
+  "keywords": [
+    "alveolar"
+  ],
+  "author": "Cooper Hsiung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/cooperhsiung/alveolar/issues"
+  },
+  "homepage": "https://gitlab.com/cooperhsiung/alveolar#readme",
+  "prettier": {
+    "singleQuote": true,
+    "endOfLine": "lf"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "quick-lru": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.138",
+    "@types/node": "^12.7.2",
+    "reflect-metadata": "^0.1.13"
+  }
+}
