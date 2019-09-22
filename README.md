@@ -53,7 +53,7 @@ bootstrap();
 import { Client } from '../src/client';
 
 const myclient = new Client({
-  url: '172.19.2.10:6960,172.19.2.10:6971,192.168.1.61:6960
+  url: '172.19.2.10:6960,172.19.2.10:6971,192.168.1.61:6960'
 });
 
 
