@@ -1,9 +1,9 @@
-// alveolar 172.19.2.10:6969 join 172.19.2.10:6970
-// alveolar 172.19.2.10:6970 join 172.19.2.10:6969
+// vesicle 172.19.2.10:6969 join 172.19.2.10:6970
+// vesicle 172.19.2.10:6970 join 172.19.2.10:6969
 
-// alveo 172.19.2.10:6970 join 172.19.2.10:6969
-// alveo 172.19.2.10:6970 leave 172.19.2.10:6969
-// alveo nodes,actions,
+// vesicle 172.19.2.10:6970 join 172.19.2.10:6969
+// vesicle 172.19.2.10:6970 leave 172.19.2.10:6969
+// vesicle nodes,actions,
 
 const args = process.argv;
 

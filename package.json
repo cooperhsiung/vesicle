@@ -1,7 +1,7 @@
 {
-  "name": "alveolar",
+  "name": "vesicle",
   "version": "1.0.0",
-  "description": "alveolar",
+  "description": "vesicle",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,17 +10,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/cooperhsiung/alveolar.git"
+    "url": "git+https://gitlab.com/cooperhsiung/vesicle.git"
   },
   "keywords": [
-    "alveolar"
+    "vesicle"
   ],
   "author": "Cooper Hsiung",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/cooperhsiung/alveolar/issues"
+    "url": "https://gitlab.com/cooperhsiung/vesicle/issues"
   },
-  "homepage": "https://gitlab.com/cooperhsiung/alveolar#readme",
+  "homepage": "https://gitlab.com/cooperhsiung/vesicle#readme",
   "prettier": {
     "singleQuote": true,
     "endOfLine": "lf"
