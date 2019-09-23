@@ -3,11 +3,15 @@
 [![NPM Version][npm-image]][npm-url]
 [![Node Version][node-image]][node-url]
 
-<p></p><p></p>
+<p></p>
 
-<p align="center"><img src="logo_200x200.png" style="height:180px;width:180px"/></p>
+<p></p>
 
-<p></p><p></p>
+<p align="center"><img src="logo_200x200.png" width="180" height="180"/></p>
+
+<p></p>
+
+<p></p>
 
 RPC framework
 
