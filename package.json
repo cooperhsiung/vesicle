@@ -1,6 +1,6 @@
 {
   "name": "vesicle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "High performance and flexible RPC framework for Node.JS",
   "main": "index.js",
   "scripts": {
@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/cooperhsiung/vesicle.git"
+    "url": "git+https://github.com/cooperhsiung/vesicle.git"
   },
   "keywords": [
-    "vesicle","rpc"
+    "vesicle",
+    "rpc"
   ],
   "author": "Cooper Hsiung",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/cooperhsiung/vesicle/issues"
+    "url": "https://github.com/cooperhsiung/vesicle/issues"
   },
-  "homepage": "https://gitlab.com/cooperhsiung/vesicle#readme",
+  "homepage": "https://github.com/cooperhsiung/vesicle#readme",
   "prettier": {
     "singleQuote": true,
     "endOfLine": "lf"

@@ -250,11 +250,9 @@ export class Server {
       if (!Array.isArray(action.use)) {
         action.use = [action.use];
       }
-      let ctx = {} as any;
-      ctx.action = action;
       action.handler = compose(
         action.handler,
-        ctx,
+        { action },
         action.use
       );
     }

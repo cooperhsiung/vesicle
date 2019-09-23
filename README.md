@@ -5,7 +5,7 @@
 
 <br/><br/>
 
-<p align="center"><img src="logo_200x200.png" width="160"/></p>
+<p align="center"><img src="./logo_200x200.png" width="160"/></p>
 
 <br/><br/>
 

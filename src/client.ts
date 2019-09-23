@@ -5,12 +5,11 @@ import _ from 'lodash';
 import net, { Socket } from 'net';
 
 import { Node } from './server';
-
 import { Provider, RoundRobin, Strategy } from './strategy';
 import { request, uuid, Deferred, encode, decode } from './helper';
 
 // todo
-// -1 更新了的新的 node , server write to connected client
+// -1 update nodes , server write to connected client
 // -2 retry, round robin, from healthy node
 // -3 update node ---
 // -4 timeout performance
