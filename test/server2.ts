@@ -29,6 +29,3 @@ server.addAction(() => {}, 'asd', 'v1');
 // console.log(server.actionMap);
 
 server.listen(6970);
-
-// console.log(server);
-// console.log(server);

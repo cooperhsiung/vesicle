@@ -1,7 +1,7 @@
 {
   "name": "vesicle",
-  "version": "1.0.1",
-  "description": "vesicle",
+  "version": "1.0.2",
+  "description": "High performance and flexible RPC framework for Node.JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "url": "git+https://gitlab.com/cooperhsiung/vesicle.git"
   },
   "keywords": [
-    "vesicle"
+    "vesicle","rpc"
   ],
   "author": "Cooper Hsiung",
   "license": "MIT",

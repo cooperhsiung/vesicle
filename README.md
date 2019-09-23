@@ -9,7 +9,7 @@
 
 <br/><br/>
 
-RPC framework
+High performance and flexible RPC framework for Node.JS
 
 ## Installation
 
@@ -23,7 +23,7 @@ npm i vesicle -S
 
 ```typescript
 // server
-import { Action, Factory, Module, Service } from '../src/decorator';
+import { Action, Factory, Module, Service } from 'vesicle';
 
 @Service()
 class Book {
@@ -54,7 +54,7 @@ function bootstrap() {
 bootstrap();
 
 // client
-import { Client } from '../src/client';
+import { Client } from 'vesicle';
 
 const myclient = new Client({
   url: '172.19.2.10:6960,172.19.2.10:6971,192.168.1.61:6960'
@@ -73,8 +73,8 @@ myclient
 - javascript
 
 ```javascript
-import { Server } from '../src/server';
-import { responseTime, LRU } from '../src/middleware';
+import { Server } from 'vesicle';
+import { responseTime, LRU } from 'vesicle/middleware';
 
 const server = new Server({ nodeID: 'node1' });
 
@@ -128,13 +128,27 @@ server.listen(6960);
 
 ### server
 
-.addAction( action: Action | Handler, service?: string, version?: string ): boolean
+##### new Server({nodeID?: string; port?: number;})
+
+create a server instance
+
+##### .addAction( action: Action | Handler, service?: string, version?: string ): boolean
 
 add a defined funtion
 
+##### .listen(port: number)
+
+start listen on specific port
+
 ### client
 
-.call(action: string,parameter?: any,options: CallOptions = { retry: this.retry }): Promise<any>
+##### new Client({ url: string; timeout?: number; retry?:number;connectTimeout?: number;})
+
+url: entry url, combine with servers's url
+timeout: max wait time for response
+retry: if net error, retry times
+
+##### .call(action: string,parameter?: any,options: CallOptions = { retry: this.retry }): Promise<any>
 
 invoke a remote funtion
 

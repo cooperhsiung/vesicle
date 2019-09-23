@@ -13,7 +13,6 @@ server.addAction({
 server.addAction({
   name: 'book.hello',
   handler: () => {
-    // console.log("========= 1",1);
     return 'hello';
   }
 });
@@ -48,6 +47,3 @@ function sleep(delay = 1000) {
 }
 
 server.listen(6960);
-
-// console.log(server);
-// console.log(server);
