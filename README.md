@@ -3,7 +3,11 @@
 [![NPM Version][npm-image]][npm-url]
 [![Node Version][node-image]][node-url]
 
-<div style="text-align:center"><img src="logo_200x200.png"/></div>
+<p></p><p></p>
+
+<p align="center"><img src="logo_200x200.png" style="height:180px;width:180px"/></p>
+
+<p></p><p></p>
 
 RPC framework
 
@@ -55,7 +59,6 @@ import { Client } from '../src/client';
 const myclient = new Client({
   url: '172.19.2.10:6960,172.19.2.10:6971,192.168.1.61:6960'
 });
-
 
 myclient
   .call('book.hi')
