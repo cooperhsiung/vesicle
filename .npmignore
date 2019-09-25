@@ -1,2 +1,7 @@
 .idea
 .vscode
+.editorconfig
+.gitignore
+.package-lock.json
+src/
+test/

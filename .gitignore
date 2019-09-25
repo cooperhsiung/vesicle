@@ -24,3 +24,12 @@ node_modules/
 
 # npm package lock
 package-lock.json
+bin/
+decorator/
+helper/
+internal/
+middleware/
+plugin/
+strategy/
+/*.js
+/*.ts
