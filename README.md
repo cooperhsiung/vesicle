@@ -5,7 +5,7 @@
 
 <br/><br/>
 
-<p align="center"><img src="./logo_200x200.png" width="160"/></p>
+<p align="center"><img src="logo_200x200.png" width="160"/></p>
 
 <br/><br/>
 
@@ -145,12 +145,68 @@ start listen on specific port
 ##### new Client({ url: string; timeout?: number; retry?:number;connectTimeout?: number;})
 
 url: entry url, combine with servers's url
-timeout: max wait time for response
-retry: if net error, retry times
 
-##### .call(action: string,parameter?: any,options: CallOptions = { retry: this.retry }): Promise<any>
+timeout: max wait time for response
+
+retry: retry times, when network error occurs, retry request
+
+##### .call(action: string,parameter?: any,options: CallOptions = { retry: this.retry }): Promise\<any>
 
 invoke a remote funtion
+
+## Middleware
+
+type Middleware = (context: Context, next: NextFunc) => any;
+
+write style
+
+```typescript
+export async function responseTime(context: Context, next: NextFunc) {
+  let start = Date.now();
+  await next();
+  console.log(`${context.action.name} took:${Date.now() - start}ms`);
+}
+```
+
+- [x] responseTime
+- [x] LRU
+- [ ] auth
+- [ ] rate limiter
+- [ ] compress
+
+## Cluster
+
+join in another node
+
+```typescript
+import { request } from '../src/helper';
+
+// join in a cluster
+request(`172.19.2.10:6960/join`, { addr: '172.19.2.10:6970' })
+  .then(ret => {
+    console.log(ret);
+  })
+  .catch(err => {
+    console.error(err);
+  });
+```
+
+cluster infos
+
+```typescript
+import { request } from '../src/helper';
+
+// display cluster info
+request(`172.19.2.10:6960/nodes`)
+  // request(`172.19.2.10:6960/actions`)
+  // request(`172.19.2.10:6960/connections`)
+  .then(ret => {
+    console.log(ret);
+  })
+  .catch(err => {
+    console.error(err);
+  });
+```
 
 ## Todo
 

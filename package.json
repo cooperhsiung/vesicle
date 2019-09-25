@@ -1,6 +1,6 @@
 {
   "name": "vesicle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "High performance and flexible RPC framework for Node.JS",
   "main": "index.js",
   "scripts": {
